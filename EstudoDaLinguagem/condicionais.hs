@@ -8,6 +8,7 @@ signum n = if n < 0
                then 0
                else 1  
 
+--Reescrita da função de raízes de grau 2 presente no arquivo funcoes.hs;
 raizes2Grau :: (Ord a, Floating a) => a -> a -> a -> (a,a)
 raizes2Grau a b c = (x1, x2)
     where
