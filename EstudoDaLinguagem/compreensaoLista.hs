@@ -1,8 +1,8 @@
-pares :: (Num a, Enum a) => a -> [a]
-pares n = [x | x <- [0,2..n]] 
+numerosPares :: (Num a, Enum a) => a -> [a]
+numerosPares n = [x | x <- [0,2..n]] 
 
-impares :: Integral a => a -> [a]
-impares n = [x | x <- [0..n], x `mod` 2 /= 0]
+numerosImpares :: Integral a => a -> [a]
+numerosImpares n = [x | x <- [0..n], x `mod` 2 /= 0]
 
 divisores :: Integral a => a -> [a]
 divisores n = [x | x <- [1..n], n `mod` x == 0]
@@ -28,3 +28,13 @@ concatenarListas xs ys = concat[xs,ys]
 concatenarListaString :: [(Integer, Char)]
 concatenarListaString = zip[1,2,3]"ola"
 
+pares :: [a] -> [(a,a)]
+pares xs = zip xs (tail xs)
+--zip [1,2,3,4,5] [2,3,4,5]
+--[(1,2),(2,3),(3,4),(4,5)]
+
+ordenada :: Ord a => [a] -> Bool
+ordenada xs = and [x <= y | (x,y) <- pares xs]
+--[(1,2),(2,3),(3,4),(3,5)]
+--and [True, True, True, True]
+--True
