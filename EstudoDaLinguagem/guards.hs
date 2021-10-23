@@ -15,3 +15,4 @@ raizes2Grau a b c =
         x2 = ((-b) - sqDelta) / (2*a)
         sqDelta = sqrt delta
         delta = b^(2 :: Int) - 4 * a * c
+
