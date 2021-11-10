@@ -9,6 +9,7 @@ somaQuadPares ns = sum (map (^ 2) (filter even ns))
 
 soma :: Num a => [a] -> a
 soma = foldr (+) 0
+-- Vai da sua escolha declarar a lista ou não
 -- alternativamente: soma xs = foldr (+) 0 xs
 
 produto :: Num a => [a] -> a
