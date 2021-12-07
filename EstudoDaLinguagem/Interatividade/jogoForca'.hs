@@ -1,5 +1,5 @@
 import System.IO
-
+--solução do professor
 main :: IO ()
 main = do hSetBuffering stdout NoBuffering
           putStrLn "Escreva uma palavra: "
