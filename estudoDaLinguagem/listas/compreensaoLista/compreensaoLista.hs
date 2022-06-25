@@ -1,5 +1,4 @@
-numerosPares :: (Num a, Enum a) => a -> [a]
-numerosPares n = [x | x <- [0,2..n]] 
+
 
 numerosImpares :: Integral a => a -> [a]
 numerosImpares n = [x | x <- [0..n], x `mod` 2 /= 0]
