@@ -4,11 +4,7 @@
 
 
 
-primo :: Integral a => a -> Bool
-primo x = divisores x == [1,x]
 
-primos :: Int -> [Int]
-primos n = [x | x <- [2 .. n], primo x]
 
 tuplasListas :: [(Integer,Integer)]
 tuplasListas = [(x,y) | x <- [1,2,3], y <- [4,5]]
