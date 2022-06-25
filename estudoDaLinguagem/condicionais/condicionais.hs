@@ -1,5 +1,5 @@
-abs :: (Num a, Ord a) => a -> a
-abs n = if n < 0 then (-n) else n
+abss :: (Num a, Ord a) => a -> a
+abss n = if n < 0 then (-n) else n
 
 signum :: (Num a, Ord a) => a -> a
 signum n = if n < 0
