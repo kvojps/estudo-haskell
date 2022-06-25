@@ -6,8 +6,7 @@
 
 
 
-fatorial :: Integer -> Integer
-fatorial n = product[2..n]
+
 
 --lista1 !! 0 -> Pega o primeiro elemento da lista1
 --head lista1 -> Também pega o primeiro elemento da lista1
