@@ -1,9 +1,3 @@
-
-
-
-
-
-
 raizes2Grau :: Floating a => a -> a -> a -> (a,a)
 raizes2Grau a b c = (x1, x2)
     where
