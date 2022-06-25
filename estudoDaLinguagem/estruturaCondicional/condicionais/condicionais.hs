@@ -1,12 +1,6 @@
-abss :: (Num a, Ord a) => a -> a
-abss n = if n < 0 then (-n) else n
 
-signum :: (Num a, Ord a) => a -> a
-signum n = if n < 0
-           then -1
-           else if n == 0
-               then 0
-               else 1  
+
+
 
 --Reescrita da função de raízes de grau 2 presente no arquivo funcoes.hs;
 raizes2Grau :: (Ord a, Floating a) => a -> a -> a -> (a,a)
