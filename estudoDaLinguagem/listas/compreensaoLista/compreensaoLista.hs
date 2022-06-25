@@ -1,7 +1,6 @@
 
 
-numerosImpares :: Integral a => a -> [a]
-numerosImpares n = [x | x <- [0..n], x `mod` 2 /= 0]
+
 
 divisores :: Integral a => a -> [a]
 divisores n = [x | x <- [1..n], n `mod` x == 0]
