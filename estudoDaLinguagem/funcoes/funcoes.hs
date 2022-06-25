@@ -1,5 +1,4 @@
-impar :: Integral a => a -> Bool
-impar n = n `mod` 2 == 1
+
 
 quadrado :: Num a => a -> a
 quadrado x = x * x
