@@ -1,6 +1,8 @@
+calcularNotas :: Integral b => (b, b) -> b -> (b, b)
 calcularNotas  (notasRestantes, notas) valorNota = 
     (notasRestantes `mod` valorNota, notas + notasRestantes `div` valorNota)
 
+mostrarNotas :: (Foldable t, Integral b) => (b, b) -> t b -> (b, b)    
 mostrarNotas (x, y) z = foldl calcularNotas (x, y) z 
 
 --mostrarNotas (576,0) [100,50,20,10,5,2,1] = 
